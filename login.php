@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($result->num_rows > 0) {
         $_SESSION["studentID"] = $studentID;
-        header("Location: dashboard.php"); // Redirect to dashboard
+        header("Location: dashboard.php"); //going back to dashboard
         exit();
     } else {
         echo "Invalid Student ID!";
