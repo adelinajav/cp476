@@ -1,16 +1,14 @@
 <?php
 $servername = "localhost";
 $username = "root";
-//change this with the correct password
-$password = "root"; 
-$database = "StudentDB";
+$password = "root"; // your MySQL password
+$database = "StudentDB"; // match this to what you created in MySQL
 
-$conn = new mysqli($servername, $username, $password, $database); //creating the connection
+//creating the connection
+$conn = new mysqli($servername, $username, $password, $database);
 
 //checking connection
-
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
-} 
-echo "Connected to MySQL successfully!";
+}
 ?>
